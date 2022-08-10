@@ -1,6 +1,5 @@
-const HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonic =
-  "enjoy siege snake gallery tired village choose pencil enhance tag charge cousin";
+// const HDWalletProvider = require('@truffle/hdwallet-provider');
+//
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
@@ -42,7 +41,7 @@ module.exports = {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          `https://ropsten.infura.io/v3/96683498299e4dd6861911670930b3c9`
+          `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`
         ),
       network_id: 3, // Ropsten's id
       gas: 5500000, // Ropsten has a lower block limit than mainnet
