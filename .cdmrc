@@ -1,2 +1,2 @@
 tabs: ['contracts/Migrations.sol']
-terminal-two: ((kill -9 $(lsof -t -i:8545) || true) && ganache-cli)
+terminal-one: ((kill -9 $(lsof -t -i:8545) || true) && ganache-cli)
